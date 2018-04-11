@@ -42,8 +42,7 @@ namespace Com.MyCompany.MyGame
         {
             SceneManager.LoadScene(0);
         }
-
-
+        
 
         #region Public Methods
 
