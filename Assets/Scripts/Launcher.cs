@@ -9,10 +9,6 @@ namespace Com.MaxAigner.PhotonTest
     public class Launcher : Photon.PunBehaviour {
 
         #region Public Variables
-        [Tooltip("The Ui Panel to let the user enter name, connect and play")]
-        public GameObject controlPanel;
-        [Tooltip("The UI Label to inform the user that the connection is in progress")]
-        public GameObject progressLabel;
         public delegate void ConnectionChangedEventHandler(object sender, ConnectionChangedEventArgs e);
         public delegate void RoomListUpdateEventHandler(object sender, RoomListUpdateEventArgs e);
         public delegate void ErrorEventHandler(object sender, ErrorEventArgs e);
@@ -29,7 +25,7 @@ namespace Com.MaxAigner.PhotonTest
         /// The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created.
         /// </summary>   
         [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so a new room will be created")]
-        public byte MaxPlayersPerRoom = 4;
+        public byte MaxPlayersPerRoom = 20;
 
         #endregion
 
